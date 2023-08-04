@@ -39,16 +39,16 @@ module.exports = {
     },
     cards: [
       {
-        title: 'Learn',
+        title: 'Inference',
         image: 'img/learn.svg',
         link: 'learn/about-depa/an-introduction-to-depa',
         description:
           'Learn about DEPA, its guiding principles, the ecosystem, network and more.',
       },
       {
-        title: 'Specification',
+        title: 'Training',
         image: 'img/specification.svg',
-        link: 'specification/about-spec',
+        link: 'training/depa_training_framework',
         description:
           'Understand the details of the APIs and flows that make up the architecture.',
       },
@@ -62,14 +62,26 @@ module.exports = {
           activeBaseRegex: '^/$',
         },
         {
-          label: 'Learn',
-          to: 'learn/about-depa/an-introduction-to-depa',
-          activeBaseRegex: '^/learn/.*',
+          type: 'dropdown',
+          label: 'Inference',
+          position: 'left',
+          items: [
+            {
+              label: 'Learn',
+              to: 'learn/about-depa/an-introduction-to-depa',
+              activeBaseRegex: '^/learn/.*',
+            },
+            {
+              label: 'Specification',
+              to: 'specification/about-spec',
+              activeBaseRegex: '^/specification/.*',
+            },
+          ],
         },
         {
-          label: 'Specification',
-          to: 'specification/about-spec',
-          activeBaseRegex: '^/specification/.*',
+          label: 'Training',
+          to: 'training/depa_training_framework',
+          activeBaseRegex: '^/training/.*',
         },
       ],
     },
@@ -122,6 +134,35 @@ module.exports = {
             {
               label: 'Flows',
               to: 'specification/flows/consent-flow',
+            },
+          ],
+        },
+        {
+          title: 'TRAINING',
+          items: [
+            {
+              label: 'DEPA Training Framework',
+              to: 'training/depa_training_framework',
+            },
+            {
+              label: 'DEPA Training Framework Overview',
+              to: 'training/depa',
+            },
+            {
+              label: 'Contracts',
+              to: 'training/contracts',
+            },
+            {
+              label: 'Confidential Clean Rooms',
+              to: 'training/confidential_clean_room_design',
+            },
+            {
+              label: 'Workflows and API specifications',
+              to: 'training/workflows',
+            },
+            {
+              label: 'Getting Started',
+              to: 'training/reference-implementation',
             },
           ],
         },
@@ -210,6 +251,23 @@ module.exports = {
         path: 'internal/specification',
         routeBasePath: 'specification',
         sidebarPath: require.resolve('./internal/specification/sidebars.ts'),
+
+        // General config
+        editUrl: 'https://github.com/iSPIRT/depa/edit/main/',
+        remarkPlugins: [
+          require('remark-code-import'),
+          require('remark-import-partial'),
+        ],
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'training',
+        path: 'internal/training',
+        routeBasePath: 'training',
+        sidebarPath: require.resolve('./internal/training/sidebars.ts'),
 
         // General config
         editUrl: 'https://github.com/iSPIRT/depa/edit/main/',

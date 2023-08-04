@@ -20,4 +20,4 @@ description: This topic explores the essential actions through which a DEPA ecos
 
 The responsibility of a registry is very minimal. A registry enables the transacting entities (DPs, CMs and DCs) to discover each other on the network (and their respective communication addresses) and helps establish trusted one-to-one connections between them. No traffic passes through a registry. Even consent request creation, the sharing of consent artifacts and notifications across entities happens in a peer-to-peer manner.
 
-![Architecture](/img/learn/about-depa/DEPA-arch.png)
+![Architecture](/img/learn/about-depa/DEPA-Arch.png)

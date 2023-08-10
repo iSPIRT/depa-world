@@ -1,7 +1,7 @@
 ---
-id: overview
-title: Overview
-description: Overview
+id: architecture
+title: Architecture
+description: Architecture
 ---
 
 # Architecture
@@ -20,7 +20,7 @@ The terms defined in this section have special meaning in the context of the DEP
 - __Differential privacy__: A system for publicly sharing information about a dataset by describing the patterns of groups within the dataset while withholding information about individuals in the dataset. 
 - __Confidential Clean Room__: A secure environment where training datasets can be processed while ensuring security and privacy. Confidential clean rooms bring together data protection capabilities of TEEs with algorithmic notions of privacy such as differential privacy. 
 - __CCR Provider__: An organization that provides clean room infrastructure and services, either in the cloud or on-premises. 
-- __Technical Standards Organization (TSO)__: An sector-specific organization that defines security and privacy standards that TDPs, TDPs and CCR providers are expected to meet. 
+- __Technical Standards Organization (TSO)__: An sector-specific organization that defines security and privacy standards that TDPs, TDCs and CCR providers are expected to meet. 
 - __Self-regulated Organization (SRO)__: A consortium of sector-specific organizations that regulates data sharing on the basis of standards set by the TSO. The SRO hosts core infrastructure components such as the central registry, contract and code signing services in support of the framework. 
 - __Central Registry__: A service provided by the SRO where TDPs, TDCs and CCR providers are registered after meeting requirements set by the SRO. The central registry may host a token service that issues participants with tokens that participants can use as proof of registration. 
 - __Dataset Reference__: Metadata about a dataset published by a TDP.

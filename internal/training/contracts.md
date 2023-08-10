@@ -6,7 +6,11 @@ description: Dataset References and Contracts
 
 # Dataset References and Contracts 
 
-In the DEPA training framework, TDPs express intent to share datasets by registering __dataset references__ with a [contract service](./contract_service_specifications.md). Dataset references are signed JSON objects that include (but are not limited to) 
+In the DEPA training framework, TDPs register __dataset references__ with a [contract service](./contract_service_specifications.md) to make their datasets discoverable to TDCs. TDCs who wish to train models using one or more registered datasets sign __contracts__ with the respective TDCs and register the contracts with the contract service. 
+
+## Dataset References
+
+Dataset references are signed JSON objects that include (but are not limited to) 
 
 - Name: Name of the dataset
 - Description: Description of the dataset
@@ -42,6 +46,8 @@ TDPs can restrict the operations that may be performed on a dataset using `dataU
 The SRO SHALL define the format and attributes required in the data card. 
 
 See [contract service specifications](./contract_service_specifications.md) for details on signing and registering dataset references. 
+
+## Contracts
 
 TDPs and TDCs collaborate on datasets using __digital contracts__. A contract is an object that defines the terms of a collaboration. It includes (but is not limited to)
 

@@ -12,7 +12,7 @@ module.exports = {
   trailingSlash: false,
   organizationName: 'depa-world', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
+  deploymentBranch: 'gh-pages-v2',
   stylesheets: [
     'https://fonts.googleapis.com/css?family=Material+Icons',
     {
@@ -50,7 +50,7 @@ module.exports = {
         image: 'img/specification.svg',
         link: 'training/depa_training_framework',
         description:
-          'Understand the details of the APIs and flows that make up the architecture.',
+          'Learn about DEPA Training Framework for responsibly training AI models.',
       },
     ],
     navbar: {
@@ -79,9 +79,25 @@ module.exports = {
           ],
         },
         {
+          type: 'dropdown',
           label: 'Training',
-          to: 'training/depa_training_framework',
-          activeBaseRegex: '^/training/.*',
+          items: [
+            {
+              label: 'Overview',
+              to: 'training/depa_training_framework',
+              activeBaseRegex: '^/training/depa_training_framework.md',
+            },
+            {
+              label: 'Contracts',
+              to: 'training/contracts',
+              activeBaseRegex: '^/training/contracts*',
+            },
+            {
+              label: 'Confidential Clean Rooms',
+              to: 'training/confidential_clean_room_design',
+              activeBaseRegex: '^/training/confidential_clean_room*',
+            },
+          ],
         },
       ],
     },
@@ -145,7 +161,7 @@ module.exports = {
               to: 'training/depa_training_framework',
             },
             {
-              label: 'DEPA Training Framework Overview',
+              label: 'Overview',
               to: 'training/depa',
             },
             {

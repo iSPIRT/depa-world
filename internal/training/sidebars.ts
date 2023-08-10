@@ -3,12 +3,12 @@ module.exports = {
     'depa_training_framework',
     {
       type: 'category',
-      label: 'DEPA Training Framework Overview',
+      label: 'Overview',
       collapsed: true,
       items: [
         'depa',
         'principles',
-        'overview',
+        'architecture',
         'use_cases',
       ],
     },

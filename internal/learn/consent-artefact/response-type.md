@@ -48,6 +48,6 @@ description: Introduction to the response type inside DEPA
 3. **Signature**
    The signature of data-response in the JWS format.
 
-For the above data type the DP can provide the response in any of the defined content types, like text/JSON would give the txn details in the JSON format and application/pdf would share the txn details in the pdf format. It is suggested that DP model their systems to provide the results in text/JSON or text/xml format as they are more machine friendly. Some data types may or may not support application/pdf, image/png etc for backward compatibility.
+For the above data type the PDP can provide the response in any of the defined content types, like text/JSON would give the txn details in the JSON format and application/pdf would share the txn details in the pdf format. It is suggested that PDP model their systems to provide the results in text/JSON or text/xml format as they are more machine friendly. Some data types may or may not support application/pdf, image/png etc for backward compatibility.
 
 Similarly in the case of health domain FHIR data exchange standards are accepted internationally and can be used as data type with DEPA.

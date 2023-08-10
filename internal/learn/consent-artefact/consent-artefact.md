@@ -41,8 +41,8 @@ A consent artefact will have three components to it:
 
    1. **Data Principal** - mentions Data principal identifier who gave the consent. This section should not contain any PII information of the Data Principal. This will typically be the CM id issued by the Consent Manager to the Data Principal.
 
-   2. **Data Request Details** - This section tells the DP that this is what the consent has been given for. This section will clearly set the boundaries for data sharing.
+   2. **Data Request Details** - This section tells the PDP that this is what the consent has been given for. This section will clearly set the boundaries for data sharing.
 
-   3. **Accounts** - The Data Principal would choose the accounts from which he intends to share the requested data. This information needs to be provided for each of the data requests which the DC makes. Users may choose to provide the information from multiple accounts, in that case it's the responsibility of the DC to do the aggregation on the provided data sets if required. This section would contain the account ids provided by the DP at the time of linking and the LinkingToken as the proof of linking.
+   3. **Accounts** - The Data Principal would choose the accounts from which he intends to share the requested data. This information needs to be provided for each of the data requests which the PDC makes. Users may choose to provide the information from multiple accounts, in that case it's the responsibility of the PDC to do the aggregation on the provided data sets if required. This section would contain the account ids provided by the PDP at the time of linking and the LinkingToken as the proof of linking.
 
 3. **Signature**: The signature of the consent artifact in the JWS format

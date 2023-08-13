@@ -8,7 +8,7 @@ description: Principles
 
 ## Democratize data access 
 
-Growth and innovation in a data economy relies on organizations being able to access and join disparate datasets, derive meaningful insights and develop new, innovative solutions. We wish to build the foundations of such an economy by encouraging open sharing of metadata and regulated sharing of rich datasets on a FRAUD (fair, reasonable, and non-discriminatory) basis. 
+Growth and innovation in a data economy relies on organizations being able to access and join disparate datasets, derive meaningful insights and develop new, innovative solutions. We wish to build the foundations of such an economy by encouraging open sharing of metadata and regulated sharing of rich datasets on a FRAND (fair, reasonable, and non-discriminatory) basis. 
 
 ## Security and Privacy-by-Design
 

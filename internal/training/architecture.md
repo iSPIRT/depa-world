@@ -34,7 +34,7 @@ The terms defined in this section have special meaning in the context of the DEP
 
 It is widely recognized that training accurate AI models requires diverse datasets. However, sharing datasets across organizations in a secure and complaint manner is often a tedious and time-consuming process. Organizations need to build trust between each other, and develop legal and technical terms under which datasets will be shared. From a regulatory perspective, this process lacks transparency and creates market distortions, with only a handful of large organizations being able to accumulate sufficiently diverse datasets. 
 
-![Architecture](./images/architecture.drawio.png)
+![DEPA Training Framework](./images/overview.png)
 
 The DEPA training framework *shown above) is a _techno-legal framework_ that democratizes and accelerates this process by providing a pre-certified secure, privacy preserving, and compliant process for Training Data Providers (TDP) to share datasets with any Training Data Consumers (TDC), obtain compensation in return, and share returns with data principals. 
 

@@ -36,7 +36,7 @@ It is widely recognized that training accurate AI models requires diverse datase
 
 ![DEPA Training Framework](./images/overview.png)
 
-The DEPA training framework *shown above) is a _techno-legal framework_ that democratizes and accelerates this process by providing a pre-certified secure, privacy preserving, and compliant process for Training Data Providers (TDP) to share datasets with any Training Data Consumers (TDC), obtain compensation in return, and share returns with data principals. 
+The DEPA training framework (shown above) is a _techno-legal framework_ that democratizes and accelerates this process by providing a pre-certified secure, privacy preserving, and compliant process for Training Data Providers (TDP) to share datasets with any Training Data Consumers (TDC), obtain compensation in return, and share returns with data principals. 
 
 In the DEPA training framework, TDPs and TDCs register with a central registry setup by the SRO. After SRO verifies their identities, TDPs and TDCs sign a common agreement, accepting the terms of participation in the framework.
 

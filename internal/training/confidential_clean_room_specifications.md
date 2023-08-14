@@ -74,7 +74,7 @@ After obtaining encryption keys, the CCR shall load  encrypted datasets and mode
 Preparing data for training often involves multiple steps e.g., joining datasets, sanitizing the data, pre-processing etc. Conventionally, data scientists have access to training datasets, and can manually inspect and transform datasets (e.g., in a Python workbook). However, CCR is an __eyes-off__ environment where direct access to the datasets is not available. Instead, TDCs specify _pipelines_ that execute within the CCR. Pipelines may be specified in DSLs such as Kubeflow. The CCR executes pipelines subject to the following constraints 
 
 - Pipelines must comply with data usage policy associated in each dataset. 
-- Operations may be restricted to enforce privacy constraints. For example, join operations may be constrained to produce datasets with one row per data principal to simplify [privacy accounting](./confidential_clean_room_dp.md). 
+- Operations may be restricted to enforce privacy constraints. For example, join operations may be constrained to produce datasets with one row per data principal to simplify [privacy accounting](./differential_privacy.md). 
 
 All intermediate datasets created during the execution of a pipeline SHALL remain protected within the CCR e.g., stored on an encrypted and integrity protected disk. Aggregate results from the pipeline e.g., cardinality of an intermediate dataset MAY be shared with the TDC as long as they are computed using a differentially private mechanism within the privacy budget specified in the contract. 
 
@@ -98,7 +98,7 @@ CCRs MAY provide TDCs with a choice of the ML framework to use for training.
 
 ### Differentially Private Training
 
-For sensitive datasets containing personally identifiable information, CCRs MUST support training algorithms that guarantee differential privacy. Additional constraints may apply in such scenarios; see [Differentially Private Training](./confidential_clean_room_dp.md) for detailed specifications. 
+For sensitive datasets containing personally identifiable information, CCRs MUST support training algorithms that guarantee differential privacy. Additional constraints may apply in such scenarios; see [Differentially Private Training](./differential_privacy.md) for detailed specifications. 
 
 ### Model release
 

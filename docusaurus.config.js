@@ -180,6 +180,10 @@ module.exports = {
               label: 'Getting Started',
               to: 'training/reference-implementation',
             },
+            {
+              label: 'FAQ',
+              to: 'training/faq',
+            },
           ],
         },
         {

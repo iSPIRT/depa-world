@@ -36,50 +36,21 @@ The DEPA training framework provides TDPs with mechanisms to ensure that TDCs us
 - When a CCR is created to train a model, it requests data encryptions keys from the TDP. The TDP SHALL NOT release keys to the CCR if the privacy budget has been exhausted. 
 - In the CCR, models SHALL Be trained using a differentially private training algorithm subject to privacy constraints specified in the contracts. For example, if a model is trained using DP-SGD, the clipping norm and noise shall be chosen based on privacy constraints. 
 
-## Privacy Budgets
+## Privacy Budget Management
 
-In any differentially private mechanism, processing a dataset e.g., to train a model, consumes some privacy budget. The dataset cannot be used anyone once the allocated budget is exhausted. This makes privacy budget a scarce resource that must be carefully managed. The DEPA training framework intends to provide TDPs with tools and guidance to manage privacy budget correctly and judiciously. 
+In any differentially private mechanism, processing a dataset e.g., to train a model, consumes some privacy budget. The dataset cannot be used anyone once the allocated budget is exhausted. Therefore, privacy budget is a scarce resource that must be carefully managed. The DEPA training framework will provide TDPs and TDCs with guidance and tools to manage privacy budget correctly and judiciously. 
 
-### Granularity 
+### Global vs TDC-specific budget allocation
 
-It is possible to assign privacy budgets to a whole dataset, or to partition 
+TDPs may assign a privacy budget to each TDC, under the assumption that TDCs can be consistently identified over time, and that TDCs do not collude e.g., by sharing their models with each other. Using DIDs and registration time checks addresses the first concern. Addressing advertent or inadvertent TDC collusion (e.g., due to a merger) is harder to address. 
 
-### Renewing privacy budgets
-
-### Global vs individual budget allocation
+We recommend that TDPs employ the following graded budget allocation policies to address this concern. 
 
 
-TDPs ma
-This works fine as long as the identity of TDC is maintained over time. The problem arises if two or more TDCs either collaborate or merge in future. In such scenarios, it is possible that the TDCs already exhausted their individual privacy budget then their cumulative privacy budget can go over the allowed limits -which is a problem because this breaks the mathematical guarantees provided by the framework. Such situations can be prevented by appropriate regulation but any malicious identification of a breach will happen post-facto which goes against our principles. Therefore, in addition to preventive regulatory requirements, we provide a range of solutions for different privacy requirements.
+| Sensitivity Level | Data Privacy Sensitivity| Solution  | Notes |
+|---|---|---|---|
+| Level 0 | Non-sensitive or aggregate data. Large amount of data is available for training and more data keeps getting generated continuously | Only legal protection | <ul><li> Least restrictive for TDCs</li><li> Privacy amplification by sampling provides extra layer of safety<li></ul>
+| Level 1 | Highly sensitive data. Also the speed at which more such data gets generated is not too slow. | Renewable Global Privacy Budget | <ul><li> No restrictions in taking the model out </li><li> ”Old” training data is continuously replaced with “new” training data to ensure privacy </li></ul> |
+| Level 2 | Highly sensitive data which is critical for larger social good. Also the speed at which more such data gets generated is slow | Restrict trained model use to CCR, i.e. the trained model never leaves CCR | <ul><li> Makes collusion harder</li><li> Restricted participation but still better than no access to rare critical training data</li></ul>
 
-Solution: 
-To address such undesirable collusions among TDCs at a future time, we recommend a graded framework that can be decided by SROs for individual domains based on the privacy-sensitivity of the underlying training data. 
-
-
-Sensitivity Level
-Solution
-Data Privacy Sensitivity
-Features
-Level 2
-Restrict trained model use to CCR, i.e. the trained model never leaves CCR  
-
-
-Highly sensitive data which is critical for larger social good. Also the speed at which more such data gets generated is rather slow.
--Makes collusion harder
--Restricted participation but still better than no access to rare critical training data
-Level 1
-Renewable Global Privacy Budget
-Highly sensitive data. Also the speed at which more such data gets generated is not too slow.
--No restrictions in taking the model out
--”Old” training data is continuously replaced with “new” training data to ensure privacy 
-Level 0
-Only regulatory protection
-
-
-Non-sensitive or aggregate data. Large amount of data is available for training and more data keeps getting generated continuously
--Least restrictive for TDCs
--Privacy amplification by sampling provides extra layer of safety
-
-
-
-The choice of the solution depends on the privacy sensitivity of the data. This will be a critical responsibility of SROs to agree upon the right level for each domain and dataset to best reflect the trade-offs between privacy of the data and the criticality of the use-cases for which the data is used. In addition to the above solutions, watermarking of models trained within with our Depa 2.0 framework is suggested. This can be particularly useful for accurate privacy budget accounting if a new TDC further tries to train a model already trained by another TDC - this can happen in the case of companies merging or coming together for business reasons.
+The choice of budget allocation policy depends on the privacy sensitivity of the data. This will be a critical responsibility of SROs to agree upon the right level for each domain and dataset to best reflect the trade-offs between privacy of the data and the criticality of the use-cases for which the data is used. 

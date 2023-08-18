@@ -10,9 +10,7 @@ Yes. Signed digital contracts as defined in the DEPA training framework are give
 
 ## Are their any guardrails against societal harms caused by models trained using the DEPA training framework?
 
-The DEPA training framework requires TDCs to include  any reported and anticipated risks from their proposed AI model in contracts. 
-
-Reference document for AI risks - https://indiaai.gov.in/responsible-ai/homepage - Risk Identification and Assessment Tool under Governance Framework
+The DEPA training framework requires TDCs to include  any reported and anticipated risks from their AI model in contracts. See [AI Governance Framework](https://indiaai.gov.in/responsible-ai/homepage) for a detailed list of risks tools to help identity and assess risks for a specific model. 
 
 
 

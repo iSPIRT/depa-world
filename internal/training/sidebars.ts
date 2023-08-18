@@ -43,6 +43,14 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'FAQ',
+      collapsed: true,
+      items: [
+        'legal',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Getting Started',
       collapsed: true,
       items: [

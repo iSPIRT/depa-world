@@ -49,7 +49,7 @@ We recommend that TDPs employ the following graded budget allocation policies to
 
 | Sensitivity Level | Data Privacy Sensitivity| Solution  | Notes |
 |---|---|---|---|
-| Level 0 | Non-sensitive or aggregate data. Large amount of data is available for training and more data keeps getting generated continuously | Only legal protection | <ul><li> Least restrictive for TDCs</li><li> Privacy amplification by sampling provides extra layer of safety<li></ul>
+| Level 0 | Non-sensitive or aggregate data. Large amount of data is available for training and more data keeps getting generated continuously | Only legal protection | <ul>Least restrictive for TDCs</ul>
 | Level 1 | Highly sensitive data. Also the speed at which more such data gets generated is not too slow. | Renewable Global Privacy Budget | <ul><li> No restrictions in taking the model out </li><li> ”Old” training data is continuously replaced with “new” training data to ensure privacy </li></ul> |
 | Level 2 | Highly sensitive data which is critical for larger social good. Also the speed at which more such data gets generated is slow | Restrict trained model use to CCR, i.e. the trained model never leaves CCR | <ul><li> Makes collusion harder</li><li> Restricted participation but still better than no access to rare critical training data</li></ul>
 

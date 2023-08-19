@@ -26,4 +26,4 @@ Obtaining and processing sensitive information from disparate sources increases 
 
 ## Transparency
 
-We wish to ensure that the system ensures transparency of all actions performed by participants, subject to justifiable confidentiality requirements of each party. Transparency ensures that all stakeholders such as regulators (e.g., the Data Protected Board) and non-government organizations have appropriate visibility into the actions of TDPs and TDCs. 
+We wish ensure transparency of all critical actions performed by participants (TDPs, TDCs and CCR providers), subject to justifiable confidentiality requirements of each party. Transparency ensures that all stakeholders such as regulators (e.g., the Data Protected Board) and non-government organizations have appropriate visibility into the actions of TDPs and TDCs. 

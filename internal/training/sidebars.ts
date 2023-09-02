@@ -11,6 +11,7 @@ module.exports = {
         'glossary',
         'architecture',
         'use_cases',
+        'roadmap'
       ],
     },
     {
@@ -50,14 +51,6 @@ module.exports = {
         'legal_faq',
         'tech_faq'
       ],
-    },
-    {
-      type: 'category',
-      label: 'Limitations and Roadmap',
-      collapsed: true,
-      items: [
-        'roadmap'
-      ]
     },
     {
       type: 'category',

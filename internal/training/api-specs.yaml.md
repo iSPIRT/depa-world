@@ -4,6 +4,8 @@ title: API Specifications
 description: API Specifications
 ---
 
+__Disclaimer: All APIs are representative and subject to change.__
+
 ```yaml
 openapi: '3.0.2'
 info:

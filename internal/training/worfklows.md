@@ -6,6 +6,8 @@ description: Workflows
 
 # Workflows
 
+__Disclaimer: All workflows are representative only and subject to change.__
+
 ## Participant registration
 
 ![TDP/TDC registration](./seqDiagram/ccr_participantRegistrationFlow.drawio.png)

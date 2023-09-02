@@ -53,6 +53,14 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Limitations and Roadmap',
+      collapsed: true,
+      items: [
+        'roadmap'
+      ]
+    },
+    {
+      type: 'category',
       label: 'Getting Started',
       collapsed: true,
       items: [

@@ -29,7 +29,7 @@ module.exports = {
       items: [
         'confidential_clean_room_design',
         'confidential_clean_room_specifications',
-        'confidential_clean_room_dp',
+        'differential_privacy',
       ],
     },
     {
@@ -39,6 +39,14 @@ module.exports = {
       items: [
         'workflows',
         'api-specs.yaml',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'FAQ',
+      collapsed: true,
+      items: [
+        'legal',
       ],
     },
     {

@@ -8,6 +8,7 @@ module.exports = {
       items: [
         'depa',
         'principles',
+        'glossary',
         'architecture',
         'use_cases',
       ],
@@ -46,7 +47,8 @@ module.exports = {
       label: 'FAQ',
       collapsed: true,
       items: [
-        'legal',
+        'legal_faq',
+        'tech_faq'
       ],
     },
     {

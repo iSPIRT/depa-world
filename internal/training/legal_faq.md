@@ -1,3 +1,9 @@
+---
+id: legal_faq
+title: Legal FAQ
+description: Legal FAQ
+---
+
 # Legal FAQ
 
 ## Is consent from data principals required for sharing data under the DEPA training framework?

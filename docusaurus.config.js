@@ -178,7 +178,7 @@ module.exports = {
             },
             {
               label: 'FAQ',
-              to: 'training/legal',
+              to: 'training/legal_faq',
             },
             {
               label: 'Getting Started',

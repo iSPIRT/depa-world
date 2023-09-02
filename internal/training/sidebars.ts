@@ -56,22 +56,6 @@ module.exports = {
       items: [
         'reference-implementation',
       ],
-    },
-    {
-      type: 'category',
-      label: 'FAQ',
-      collapsed: true,
-      items: [
-        'faq',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Roadmap',
-      collapsed: true,
-      items: [
-        'roadmap',
-      ],
-    },
+    }
   ],
 };

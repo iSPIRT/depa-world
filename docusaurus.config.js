@@ -177,18 +177,13 @@ module.exports = {
               to: 'training/workflows',
             },
             {
-              label: 'Legal FAQ',
+              label: 'FAQ',
               to: 'training/legal',
             },
             {
               label: 'Getting Started',
               to: 'training/reference-implementation',
             }
-            },
-            {
-              label: 'FAQ',
-              to: 'training/faq',
-            },
           ],
         },
         {

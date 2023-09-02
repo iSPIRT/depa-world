@@ -20,7 +20,7 @@ Confidential clean rooms are based on novel security features for _confidential 
 
 The second core feature of confidential computing is remote attestation: the TEE code can request the hardware to attest a given message (such as a public key), together with the digests of its binary image and configuration, measured when the TEE was created. The attestation is signed with a key unique to the CPU (stored in hardware fuses) and is backed by a public-key certificate for the plat-form (endorsed by the hardware vendor). By verifying this signature, a user can thus authenticate the TEE’s code and hardware platform before trusting it with private data.
 
-Most cloud platform support deployment of containerized workloads in TEEs. In the following, we suppose that training runs in confidential containers, such as those provided in the cloud by AWS, GCP and Azure.
+Most cloud platform support deployment of containerized workloads in TEEs. In the following, we suppose that training runs in confidential containers, such as those provided in the cloud by AWS Nitro Enclaves, Confidential Spaces on GCP and Confidential Azure Container Instances on Azure.
 
 ## Training Workflow
 In the DEPA training framework, TDCs employ confidential clean rooms to train their models on datasets based on contracts signed with TDPs and registered with the contract service. The overall training workflow is as follows. 

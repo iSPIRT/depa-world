@@ -29,3 +29,7 @@ The DEPA training framework supports a transparent, automated and flexible mecha
 In some scenarios, TDPs MAY compensate data principals for contributing to their datasets, either voluntarily or as required by the SRO.
 
 The DEPA Training Framework currently does not define the nature of this compensation or support automated payments. However, it encourages TDPs to explore appropriate ways to compensate data principals in a timely manner, ensuring that compensation does not create perverse incentives.
+
+## TDC/TDP -> CCR Provider Payments
+
+In scenarios where the CCR is being hosted by a CCR provider on behalf of the TDC or TDP, the CCR provider may be paid for the resources (compute, memory, etc.) used during training. The framework currently does not define the nature of this compensation or support automated payments.

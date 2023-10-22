@@ -12,7 +12,7 @@ This section presents representative use cases to illustrate the scope of the DE
 
 AI models are being increasingly being integrated into healthcare systems for scenarios ranging from disease surveillance to diagnostic assistants. Building accurate models for healthcare often requires access to longitudinal data related to the specific population of interest. For instance, COVID surveillance models rely on data from PCR tests, vaccination records, and hospitalizations. To extract meaningful insights, these datasets must be combined using a common identifier (e.g., mobile number) and employed to train predictive models.
 
-DEPA 2.0 can helps setup secure data collaborations and facilitate timely development of models.
+The DEPA Training Framework can helps setup secure data collaborations and facilitate timely development of models.
 
 - Patients get their X-rays done at the pathology labs or hospitals. Such labs and hospitals are Training Data Providers (TDP).
 - A health tech has invented a new model for predicting tuberculosis using X-rays functions as a Training Data Consumer (TDC).

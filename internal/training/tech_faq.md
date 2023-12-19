@@ -34,6 +34,25 @@ We expect TDPs to publish statistics and synthetic datasets to help TDCs assess 
 
 CCR implementations will support tools to help monitor and debug training pipelines without compromising privacy. 
 
+## Does DEPA supporting Self-Sovereign Identity (SSI) and DIDs (distributed identifiers)? Which open source IAM frameworks are used?
+
+Yes DEPA supports SSI and DID. The choice of which IAM frameworks are supported is left up to the SRO. In our reference implementation, we support did:x509 and did:web.
+
+## How are contracts and agreements represented in the system (REGO, ODRL, etc.)?
+
+In DEPA training, TDPs register datasets with the contract service, backed by a verifiable ledger. The service provides a public interface for querying. So potential TDCs (or anyone else) can query the service and find out all datasets that are registered.
+
+## Which encryption technology is used? Is distributed ledger technology (blockchain) used? If yes which DLT open source software is used?
+
+We use standard AES-XTS encryption. No DLT here.
+
+## Payments to the TDPs in real time as per the terms of the contract". Is this service provided by a marketplace ?
+
+Yes this is provided by the contract service.
+
+## Would DEPA supply certified ML frameworks?
+We are developing certified ML framework in the open source. Part of the roadmap.
+
 ## How can I get involved? 
 
 We are currently in the Wave-0 phase, where we work with select organizations to evaluate the framework. If you are interested, please register using this [form](https://docs.google.com/forms)

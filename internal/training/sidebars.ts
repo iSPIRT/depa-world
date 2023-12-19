@@ -11,18 +11,14 @@ module.exports = {
         'glossary',
         'architecture',
         'use_cases',
-        'roadmap'
+        'roadmap',
       ],
     },
     {
       type: 'category',
       label: 'Contracts',
       collapsed: true,
-      items: [
-        'contracts',
-        'contract_service_specifications',
-        'payments',
-      ],
+      items: ['contracts', 'contract_service_specifications', 'payments'],
     },
     {
       type: 'category',
@@ -38,27 +34,25 @@ module.exports = {
       type: 'category',
       label: 'Workflows and API specifications',
       collapsed: true,
-      items: [
-        'workflows',
-        'api-specs.yaml',
-      ],
+      items: ['workflows', 'api-specs.yaml'],
     },
     {
       type: 'category',
       label: 'FAQ',
       collapsed: true,
-      items: [
-        'legal_faq',
-        'tech_faq'
-      ],
+      items: ['legal_faq', 'tech_faq'],
+    },
+    {
+      type: 'category',
+      label: 'News',
+      collapsed: true,
+      items: ['open-house-sessions'],
     },
     {
       type: 'category',
       label: 'Getting Started',
       collapsed: true,
-      items: [
-        'reference-implementation',
-      ],
-    }
+      items: ['reference-implementation'],
+    },
   ],
 };

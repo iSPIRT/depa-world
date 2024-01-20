@@ -44,12 +44,6 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'News',
-      collapsed: true,
-      items: ['open-house-sessions'],
-    },
-    {
-      type: 'category',
       label: 'Getting Started',
       collapsed: true,
       items: ['reference-implementation'],

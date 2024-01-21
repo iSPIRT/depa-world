@@ -99,6 +99,17 @@ module.exports = {
             },
           ],
         },
+        {
+          type: 'dropdown',
+          label: 'News',
+          items: [
+            {
+              label: 'Open house Sessions',
+              to: 'news/open-house-sessions',
+              activeBaseRegex: '^/news/open-house-sessions.md',
+            },
+          ],
+        },
       ],
     },
     footer: {
@@ -183,7 +194,7 @@ module.exports = {
             {
               label: 'Getting Started',
               to: 'training/reference-implementation',
-            }
+            },
           ],
         },
         {
@@ -288,6 +299,23 @@ module.exports = {
         path: 'internal/training',
         routeBasePath: 'training',
         sidebarPath: require.resolve('./internal/training/sidebars.ts'),
+
+        // General config
+        editUrl: 'https://github.com/iSPIRT/depa/edit/main/',
+        remarkPlugins: [
+          require('remark-code-import'),
+          require('remark-import-partial'),
+        ],
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'news',
+        path: 'internal/news',
+        routeBasePath: 'news',
+        sidebarPath: require.resolve('./internal/news/sidebars.ts'),
 
         // General config
         editUrl: 'https://github.com/iSPIRT/depa/edit/main/',

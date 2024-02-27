@@ -108,6 +108,11 @@ module.exports = {
               to: 'news/open-house-sessions',
               activeBaseRegex: '^/news/open-house-sessions.md',
             },
+            {
+              label: 'Partners',
+              to: 'news/partners',
+              activeBaseRegex: '^/news/partners.md',
+            },
           ],
         },
       ],

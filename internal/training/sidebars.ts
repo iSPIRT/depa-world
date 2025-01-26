@@ -38,6 +38,13 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Regulatory Framework',
+      collapsed: true,
+      items: ['depa_regulatory_framework'],
+    },
+
+    {
+      type: 'category',
       label: 'FAQ',
       collapsed: true,
       items: ['legal_faq', 'tech_faq'],
